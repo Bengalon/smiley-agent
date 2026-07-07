@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מספרת משה | מספרה בגבעתיים</title>
+<meta name="description" content="מספרת משה — מספרת שכונה ותיקה עם יד חמה. מספרה בגבעתיים, רמב&quot;ם 41, גבעתיים.">
+<meta name="theme-color" content="#334155">
+<meta property="og:title" content="מספרת משה">
+<meta property="og:description" content="מספרת שכונה ותיקה עם יד חמה">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "מספרת משה", "description": "מספרת שכונה ותיקה עם יד חמה", "address": {"@type": "PostalAddress", "streetAddress": "רמב\"ם 41, גבעתיים", "addressLocality": "גבעתיים", "addressCountry": "IL"}, "areaServed": "גבעתיים"}
+</script>
+<style>
+:root{
+  --primary:#334155; --dark:#0f172a; --accent:#94a3b8; --ink:#f8fafc;
+  --bg:#ffffff; --surface:#f7f7f9; --text:#1a1a1e; --muted:#5b5b66; --line:#e6e6ec;
+  --radius:16px; --maxw:1080px; --shadow:0 10px 30px rgba(0,0,0,.08);
+  --font:'Segoe UI',system-ui,'Assistant','Rubik','Heebo',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);color:var(--text);background:var(--bg);line-height:1.7;font-size:17px}
+h1,h2,h3{line-height:1.25;margin:0 0 .4em}
+h2{font-size:clamp(1.5rem,3.5vw,2.1rem)}
+p{margin:0 0 1em}
+a{color:var(--primary)}
+img{max-width:100%}
+.container{max-width:var(--maxw);margin-inline:auto;padding-inline:20px}
+.skip{position:absolute;right:-999px;top:0;background:var(--primary);color:#fff;padding:10px 16px;z-index:100;border-radius:0 0 10px 10px}
+.skip:focus{right:12px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;color:var(--dark);text-decoration:none}
+.brand .logo{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--primary),var(--dark));color:#fff;font-size:1.2rem}
+.nav-links{display:flex;gap:6px;align-items:center;list-style:none;margin:0;padding:0}
+.nav-links a{text-decoration:none;color:var(--text);padding:8px 12px;border-radius:10px;font-weight:600}
+.nav-links a:hover{background:var(--surface)}
+.nav-cta{background:var(--primary);color:#fff!important}
+.nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:1.2rem;cursor:pointer}
+
+/* Hero */
+.hero{position:relative;color:#fff;background:linear-gradient(135deg,var(--primary),var(--dark));overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 20%,rgba(255,255,255,.14),transparent 40%),radial-gradient(circle at 85% 80%,rgba(255,255,255,.1),transparent 40%);pointer-events:none}
+.hero-inner{position:relative;display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center;padding-block:64px}
+.hero .eyebrow{display:inline-block;background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;font-weight:700;font-size:.9rem;margin-bottom:14px}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);color:#fff}
+.hero .lead{font-size:1.2rem;color:var(--ink);max-width:44ch}
+.hero-badge{aspect-ratio:1;display:grid;place-items:center;font-size:clamp(4rem,14vw,8rem);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:28px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:12px;font-weight:800;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem}
+.btn-primary{background:#fff;color:var(--dark)}
+.btn-primary:hover{transform:translateY(-1px)}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-ghost:hover{background:rgba(255,255,255,.2)}
+
+/* Sections */
+section{padding-block:60px}
+.section-head{text-align:center;max-width:60ch;margin-inline:auto;margin-bottom:36px}
+.section-head .kicker{color:var(--primary);font-weight:800;letter-spacing:.04em;text-transform:uppercase;font-size:.85rem}
+.note{color:var(--muted);font-size:.95rem}
+
+.grid{display:grid;gap:18px;list-style:none;margin:0;padding:0}
+.services .grid{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card-emoji{font-size:2rem;display:inline-block;margin-bottom:10px}
+.card h3{font-size:1.15rem}
+.card p{color:var(--muted);margin:0}
+
+.features{background:var(--surface)}
+.features .grid{grid-template-columns:repeat(3,1fr)}
+.feature{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.feature-emoji{font-size:1.8rem}
+.feature h3{font-size:1.1rem;margin:0 0 .2em}
+.feature p{color:var(--muted);margin:0}
+
+.gallery .grid{grid-template-columns:repeat(3,1fr)}
+.shot{margin:0;border-radius:var(--radius);overflow:hidden;position:relative;aspect-ratio:4/3;display:grid;place-items:center;color:#fff}
+.shot-0{background:linear-gradient(135deg,var(--primary),var(--dark))}
+.shot-1{background:linear-gradient(135deg,var(--dark),var(--primary))}
+.shot-2{background:linear-gradient(135deg,var(--accent),var(--primary))}
+.shot-emoji{font-size:3.4rem;filter:drop-shadow(0 4px 8px rgba(0,0,0,.25))}
+.shot figcaption{position:absolute;inset-inline:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.55));padding:14px;font-weight:700}
+
+.about-wrap{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.about-card{background:linear-gradient(135deg,var(--primary),var(--dark));color:#fff;border-radius:24px;padding:36px;min-height:220px;display:grid;place-content:center;text-align:center}
+.about-card .big{font-size:5rem}
+
+.reviews .grid{grid-template-columns:repeat(3,1fr)}
+.review{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:0}
+.review p{font-size:1.05rem}
+.review cite{color:var(--primary);font-weight:700;font-style:normal}
+
+.hours-contact{background:var(--surface)}
+.hc-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.hours-list{list-style:none;margin:0;padding:0}
+.hours-list li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--line)}
+.hours-list li:last-child{border-bottom:0}
+.hours-list .day{font-weight:700}
+.contact-info{margin:0}
+.ci{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line)}
+.ci:last-child{border-bottom:0}
+.ci span{font-size:1.3rem}
+.ci dt{font-weight:800;font-size:.85rem;color:var(--muted)}
+.ci dd{margin:0;font-size:1.05rem}
+
+form{display:grid;gap:14px;margin-top:18px}
+.field{display:grid;gap:6px}
+label{font-weight:700;font-size:.95rem}
+input,textarea{font:inherit;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;background:#fff;width:100%}
+input:focus,textarea:focus{border-color:var(--primary);outline:none}
+.form-msg{padding:12px 14px;border-radius:10px;font-weight:700;display:none}
+.form-msg.ok{display:block;background:#ecfdf5;color:#065f46;border:1px solid #6ee7b7}
+.form-msg.err{display:block;background:#fef2f2;color:#991b1b;border:1px solid #fca5a5}
+
+.site-footer{background:var(--dark);color:#fff;padding-block:40px}
+.site-footer a{color:#fff}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:26px}
+.foot-grid h4{margin:0 0 12px;font-size:1rem}
+.foot-grid ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.foot-note{border-top:1px solid rgba(255,255,255,.15);margin-top:28px;padding-top:18px;font-size:.85rem;color:#cbd5e1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+@media (max-width:860px){
+  .hero-inner,.about-wrap,.hc-grid{grid-template-columns:1fr}
+  .hero-badge{display:none}
+  .services .grid,.features .grid,.gallery .grid,.reviews .grid,.foot-grid{grid-template-columns:1fr 1fr}
+  .nav-links{position:fixed;inset:64px 0 auto 0;flex-direction:column;background:#fff;border-bottom:1px solid var(--line);padding:14px 20px;display:none}
+  .nav-links.open{display:flex}
+  .nav-links a{width:100%}
+  .nav-toggle{display:inline-block}
+}
+@media (max-width:520px){
+  .services .grid,.features .grid,.gallery .grid,.reviews .grid,.foot-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">דלג לתוכן</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#top"><span class="logo" aria-hidden="true">💈</span><span>מספרת משה</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="פתיחת תפריט">☰</button>
+    <ul class="nav-links" id="menu">
+      <li><a href="#services">השירותים</a></li>
+      <li><a href="#gallery">גלריה</a></li>
+      <li><a href="#hours">שעות</a></li>
+      <li><a class="nav-cta" href="#contact">צור קשר</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="container hero-inner">
+    <div>
+      <span class="eyebrow">מספרה · גבעתיים</span>
+      <h1 id="hero-title">מספרת משה</h1>
+      <p class="lead">מספרת שכונה ותיקה עם יד חמה</p>
+      <div class="cta-row">
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=רמב"ם+41,+גבעתיים" target="_blank" rel="noopener">📍 ניווט</a>
+      </div>
+    </div>
+    <div class="hero-badge" aria-hidden="true">💈</div>
+  </div>
+</section>
+
+<section class="services" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">מספרה</span>
+      <h2 id="services-title">השירותים שלנו</h2>
+      <p class="note">התספורות והשירותים להמחשה — נשמח להתאים לך אישית.</p>
+    </div>
+    <ul class="grid">
+          <li class="card">
+            <span class="card-emoji" aria-hidden="true">✂️</span>
+            <h3>תספורת גברים</h3>
+            <p>תספורת מדויקת בהתאמה אישית, כולל גימור ועיצוב.</p>
+          </li>
+          <li class="card">
+            <span class="card-emoji" aria-hidden="true">🧔</span>
+            <h3>עיצוב וטיפוח זקן</h3>
+            <p>קיצוב, עיצוב וטיפוח זקן עם מגבת חמה.</p>
+          </li>
+          <li class="card">
+            <span class="card-emoji" aria-hidden="true">💇</span>
+            <h3>תספורת נשים</h3>
+            <p>תספורת, פן ועיצוב לפי הסגנון שמתאים לך.</p>
+          </li>
+          <li class="card">
+            <span class="card-emoji" aria-hidden="true">🎨</span>
+            <h3>צבע והחלקה</h3>
+            <p>צביעה, גוונים והחלקות בחומרים איכותיים.</p>
+          </li>
+          <li class="card">
+            <span class="card-emoji" aria-hidden="true">👦</span>
+            <h3>תספורת ילדים</h3>
+            <p>יחס סבלני ונעים גם לקטנטנים.</p>
+          </li>
+          <li class="card">
+            <span class="card-emoji" aria-hidden="true">💧</span>
+            <h3>חפיפה ועיצוב</h3>
+            <p>חפיפה, טריטמנט ועיצוב לשיער בריא ומטופח.</p>
+          </li>
+    </ul>
+  </div>
+</section>
+
+<section class="features" aria-labelledby="features-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">למה אנחנו</span>
+      <h2 id="features-title">מה שאתם מקבלים אצלנו</h2>
+    </div>
+    <ul class="grid">
+          <li class="feature">
+            <span class="feature-emoji" aria-hidden="true">⭐</span>
+            <div><h3>יחס אישי</h3><p>מכירים כל לקוח בשם ומתאימים את התספורת בדיוק לך.</p></div>
+          </li>
+          <li class="feature">
+            <span class="feature-emoji" aria-hidden="true">🕒</span>
+            <div><h3>בלי להמתין</h3><p>אפשר לתאם תור מראש ולהיכנס בזמן.</p></div>
+          </li>
+          <li class="feature">
+            <span class="feature-emoji" aria-hidden="true">🧼</span>
+            <div><h3>היגיינה מלאה</h3><p>כלים מעוקרים וסביבה נקייה ומסודרת.</p></div>
+          </li>
+    </ul>
+  </div>
+</section>
+
+<section class="about" aria-labelledby="about-title">
+  <div class="container about-wrap">
+    <div>
+      <span class="kicker" style="color:var(--primary);font-weight:800">קצת עלינו</span>
+      <h2 id="about-title">הסיפור של מספרת משה</h2>
+      <p>מספרת משה היא מספרת שכונה שבה כל לקוח מקבל יחס אישי, מקצועי וחם. אנחנו מאמינים שתספורת טובה מתחילה בהקשבה — להבין מה מתאים לך, לאורח החיים ולסגנון שלך.</p>
+      <p>אנחנו נמצאים ברמב&quot;ם 41, גבעתיים ומשרתים את גבעתיים והסביבה. מוזמנים לקפוץ, להתקשר או לשלוח הודעה — תמיד נשמח לעזור.</p>
+    </div>
+    <div class="about-card">
+      <div class="big" aria-hidden="true">💈</div>
+      <p style="margin:0;font-weight:700;font-size:1.2rem">גבעתיים</p>
+      <p style="margin:0;color:var(--ink)">רמב&quot;ם 41, גבעתיים</p>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery" aria-labelledby="gallery-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">גלריה</span>
+      <h2 id="gallery-title">רגעים מאצלנו</h2>
+      <p class="note">התמונות להמחשה — אפשר להחליף בתמונות אמיתיות של העסק.</p>
+    </div>
+    <div class="grid">
+          <figure class="shot shot-0">
+            <span class="shot-emoji" aria-hidden="true">💈</span>
+            <figcaption>תספורת קלאסית</figcaption>
+          </figure>
+          <figure class="shot shot-1">
+            <span class="shot-emoji" aria-hidden="true">💈</span>
+            <figcaption>עיצוב זקן</figcaption>
+          </figure>
+          <figure class="shot shot-2">
+            <span class="shot-emoji" aria-hidden="true">💈</span>
+            <figcaption>פן ועיצוב</figcaption>
+          </figure>
+          <figure class="shot shot-0">
+            <span class="shot-emoji" aria-hidden="true">💈</span>
+            <figcaption>גוונים</figcaption>
+          </figure>
+          <figure class="shot shot-1">
+            <span class="shot-emoji" aria-hidden="true">💈</span>
+            <figcaption>לוק ערב</figcaption>
+          </figure>
+          <figure class="shot shot-2">
+            <span class="shot-emoji" aria-hidden="true">💈</span>
+            <figcaption>אווירה במספרה</figcaption>
+          </figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" aria-labelledby="reviews-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">המלצות</span>
+      <h2 id="reviews-title">מה אומרים עלינו</h2>
+      <p class="note">ביקורות לדוגמה — מומלץ להחליף בהמלצות אמיתיות של לקוחות.</p>
+    </div>
+    <div class="grid">
+          <blockquote class="review">
+            <p>“שירות אדיב ומקצועי, תמיד יוצאים מרוצים. ממליץ בחום!”</p>
+            <cite>— לקוח/ה קבוע/ה</cite>
+          </blockquote>
+          <blockquote class="review">
+            <p>“יחס אישי וחם, מרגישים כמו במשפחה. עסק שנעים לתמוך בו.”</p>
+            <cite>— תושב/ת השכונה</cite>
+          </blockquote>
+          <blockquote class="review">
+            <p>“הגעתי בהמלצה ונשארתי. איכות ומחיר הוגן, בדיוק מה שחיפשתי.”</p>
+            <cite>— לקוח/ה חדש/ה</cite>
+          </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="hours-contact" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">צור קשר</span>
+      <h2 id="contact-title">בואו נדבר</h2>
+    </div>
+    <div class="hc-grid">
+      <div class="panel" id="hours">
+        <h3>שעות פעילות</h3>
+        <ul class="hours-list">
+          <li><span class="day">ראשון–חמישי</span><span>09:00–19:00</span></li>
+          <li><span class="day">שישי / ערבי חג</span><span>09:00–14:00</span></li>
+          <li><span class="day">שבת</span><span>סגור</span></li>
+        </ul>
+        <p class="note" style="margin-top:14px">שעות הפעילות להמחשה — ניתן לעדכן לשעות המדויקות של העסק.</p>
+        <h3 style="margin-top:24px">פרטים ליצירת קשר</h3>
+        <dl class="contact-info">
+            <div class="ci"><span aria-hidden="true">📍</span><div><dt>כתובת</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=רמב"ם+41,+גבעתיים" target="_blank" rel="noopener">רמב&quot;ם 41, גבעתיים</a></dd></div></div>
+            <div class="ci"><span aria-hidden="true">🧭</span><div><dt>ניווט</dt><dd><a href="https://waze.com/ul?q=רמב"ם%2041,%20גבעתיים" target="_blank" rel="noopener">Waze</a> · <a href="https://www.google.com/maps/search/?api=1&query=רמב"ם+41,+גבעתיים" target="_blank" rel="noopener">Google Maps</a></dd></div></div>
+        </dl>
+      </div>
+      <div class="panel">
+        <h3>השאירו הודעה</h3>
+        <p class="note">מלאו את הפרטים ונחזור אליכם בהקדם.</p>
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="cf-name">שם מלא</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required aria-required="true">
+          </div>
+          <div class="field">
+            <label for="cf-phone">טלפון</label>
+            <input id="cf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required aria-required="true">
+          </div>
+          <div class="field">
+            <label for="cf-msg">הודעה</label>
+            <textarea id="cf-msg" name="message" rows="4"></textarea>
+          </div>
+          <p class="form-msg" id="cf-status" role="status" aria-live="polite"></p>
+          <button class="btn btn-primary" type="submit" style="background:var(--primary);color:#fff">שליחה</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>מספרת משה</h4>
+        <p style="color:#cbd5e1">מספרת שכונה ותיקה עם יד חמה</p>
+        <p style="color:#cbd5e1">מספרה · גבעתיים</p>
+      </div>
+      <div>
+        <h4>ניווט</h4>
+        <ul>
+          <li><a href="#services">השירותים</a></li>
+          <li><a href="#gallery">גלריה</a></li>
+          <li><a href="#hours">שעות</a></li>
+          <li><a href="#contact">צור קשר</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>יצירת קשר</h4>
+        <ul>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=רמב"ם+41,+גבעתיים" target="_blank" rel="noopener">רמב&quot;ם 41, גבעתיים</a></li>
+          
+          
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© 2026 מספרת משה. כל הזכויות שמורות.</span>
+      <span>אתר לדוגמה שנבנה עבור העסק · התוכן ניתן לעדכון</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle=document.querySelector('.nav-toggle'),menu=document.getElementById('menu');
+  if(toggle){toggle.addEventListener('click',function(){
+    var open=menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',open?'true':'false');
+  });
+  menu.addEventListener('click',function(e){if(e.target.tagName==='A'){menu.classList.remove('open');toggle.setAttribute('aria-expanded','false');}});}
+
+  var form=document.getElementById('contact-form'),status=document.getElementById('cf-status');
+  if(form){form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=form.name.value.trim(),phone=form.phone.value.trim();
+    status.className='form-msg';
+    if(!name||!phone){status.classList.add('err');status.textContent='נא למלא שם וטלפון.';return;}
+    if(!/^[0-9+\-\s()]{7,}$/.test(phone)){status.classList.add('err');status.textContent='מספר הטלפון אינו תקין.';return;}
+    status.classList.add('ok');
+    status.textContent='תודה '+name+'! ההודעה התקבלה ונחזור אליך בהקדם.';
+    form.reset();
+  });}
+})();
+</script>
+</body>
+</html>
