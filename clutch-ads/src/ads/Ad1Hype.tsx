@@ -122,7 +122,7 @@ export const Ad1Hype: React.FC = () => (
       <EndCard />
     </Cut>
     <Grain />
-    <Sequence from={0} layout="none">
+    <Sequence layout="none">
       <Sfx at={0} name="whoosh-rev" volume={0.5} />
       <Sfx at={2} name="impact-big" volume={0.6} />
       {[B(4), B(8), B(12), B(20), B(24)].map((at, i) => (

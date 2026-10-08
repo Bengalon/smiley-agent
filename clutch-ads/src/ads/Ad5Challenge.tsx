@@ -143,7 +143,7 @@ export const Ad5Challenge: React.FC = () => (
       <EndCard />
     </Cut>
     <Grain />
-    <Sequence from={0} layout="none">
+    <Sequence layout="none">
       {[B(4), B(12), B(24), B(36), B(38), B(41)].map((at, i) => (
         <Sfx key={i} at={at - 3} name="whoosh-short" volume={0.45} />
       ))}

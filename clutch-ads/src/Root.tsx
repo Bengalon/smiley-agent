@@ -1,6 +1,5 @@
 import React from "react";
 import { Composition, Folder } from "remotion";
-import { Test } from "./Test";
 import { Ad1Hype, AD1_FRAMES } from "./ads/Ad1Hype";
 import { Ad5Challenge, AD5_FRAMES } from "./ads/Ad5Challenge";
 import { Ad2NotLuck, AD2_FRAMES } from "./ads/Ad2NotLuck";
@@ -17,9 +16,6 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="Ad3-HowItWorks-54s" component={Ad3HowItWorks} durationInFrames={AD3_FRAMES} {...V} />
       <Composition id="Ad4-ClutchMoment-56s" component={Ad4ClutchMoment} durationInFrames={AD4_FRAMES} {...V} />
       <Composition id="Ad5-Challenge-23s" component={Ad5Challenge} durationInFrames={AD5_FRAMES} {...V} />
-    </Folder>
-    <Folder name="Dev">
-      <Composition id="Test" component={Test} durationInFrames={160} {...V} />
     </Folder>
   </>
 );
