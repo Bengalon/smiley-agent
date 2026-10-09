@@ -65,7 +65,7 @@ export const AdChallenge: React.FC = () => {
       <Plate text="ריכוז." at={V(6.64)} out={V(7.6) - 2} size={150} rot={3} style={low} />
       <Plate text="החלטה." at={V(7.6)} out={V(8.3) - 2} size={150} style={low} />
       <Rise text={"מצא את\n*החץ השונה.*"} at={V(8.3)} out={V(9.88) - 4} size={92} style={{ position: "absolute", left: 40, right: 40, top: 80 }} />
-      <Sequence from={0}>
+      <Sequence>
         <Countdown marks={[V(9.88), V(10.68), V(11.28)]} size={200} />
       </Sequence>
       <Slam text="הספקת?" at={V(12.1)} out={V(12.78) - 2} size={170} style={{ position: "absolute", left: 40, right: 40, top: 760 }} />

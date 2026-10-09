@@ -99,7 +99,7 @@ const ShotInner: React.FC<{
           muted
           trimBefore={Math.round(offset * 30)}
           playbackRate={rate}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          objectFit="cover" style={{ width: "100%", height: "100%" }}
           effects={[...(zb > 0.01 ? [zoomBlur({ amount: zb })] : []), ...(g ? [chromaticAberration({ amount: 0.025, angle: 0 })] : [])]}
         />
       </AbsoluteFill>

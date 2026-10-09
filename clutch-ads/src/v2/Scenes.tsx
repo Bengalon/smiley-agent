@@ -54,7 +54,7 @@ export const Versus: React.FC<{ len: number; left?: string; right?: string; lOff
   const half = (clip: string, off: number, side: "top" | "bottom") => (
     <div style={{ position: "absolute", left: 0, right: 0, height: 960, [side]: 0, overflow: "hidden", transform: `translateX(${(1 - sl) * (side === "top" ? -1080 : 1080)}px)` }}>
       <div style={{ position: "absolute", left: 0, top: side === "top" ? -380 : -560, width: 1080, height: 1920, transform: `scale(${map(f, [0, len], [1.05, 1.15])})` }}>
-        <Video src={staticFile(`clips/${clip}.mp4`)} muted trimBefore={Math.round(off * 30)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        <Video src={staticFile(`clips/${clip}.mp4`)} muted trimBefore={Math.round(off * 30)} objectFit="cover" style={{ width: "100%", height: "100%" }} />
       </div>
       <AbsoluteFill style={{ background: side === "top" ? "linear-gradient(0deg, rgba(198,255,51,.25), transparent 40%)" : "linear-gradient(180deg, rgba(124,77,255,.35), transparent 40%)" }} />
     </div>
@@ -99,7 +99,7 @@ export const EndCardV2: React.FC<{ len: number; cta?: string; tagline?: string; 
   return (
     <AbsoluteFill style={{ background: K.bg }}>
       <AbsoluteFill style={{ opacity: 0.55, filter: "blur(10px) brightness(.55) saturate(1.2)", transform: `scale(${1.1 + f * 0.001})` }}>
-        <Video src={staticFile("clips/chips.mp4")} muted trimBefore={30} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        <Video src={staticFile("clips/chips.mp4")} muted trimBefore={30} objectFit="cover" style={{ width: "100%", height: "100%" }} />
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "radial-gradient(60% 35% at 50% 32%, rgba(124,77,255,.55), transparent 70%)" }} />
       <AbsoluteFill style={{ transform: "translateY(-500px) scale(.8)" }}>

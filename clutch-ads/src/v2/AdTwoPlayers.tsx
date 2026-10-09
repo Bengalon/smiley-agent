@@ -20,7 +20,7 @@ const Split: React.FC<{ len: number }> = ({ len }) => {
   const half = (clip: string, off: number, side: "top" | "bottom", filter: string) => (
     <div style={{ position: "absolute", left: 0, right: 0, height: 960, [side]: 0, overflow: "hidden", transform: `translateY(${(1 - sl) * (side === "top" ? -960 : 960)}px)` }}>
       <div style={{ position: "absolute", left: 0, top: side === "top" ? -330 : -520, width: 1080, height: 1920, transform: `scale(${1.05 + (f / len) * 0.1})`, filter }}>
-        <Video src={staticFile(`clips/${clip}.mp4`)} muted trimBefore={Math.round(off * 30)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        <Video src={staticFile(`clips/${clip}.mp4`)} muted trimBefore={Math.round(off * 30)} objectFit="cover" style={{ width: "100%", height: "100%" }} />
       </div>
     </div>
   );
