@@ -6,7 +6,7 @@ cd "$(dirname "$0")/.."
 mkdir -p out/raw out/final
 IDS=("$@")
 if [ ${#IDS[@]} -eq 0 ]; then
-  IDS=(Ad1-Hype-15s Ad5-Challenge-23s Ad2-NotLuck-36s Ad3-HowItWorks-54s Ad4-ClutchMoment-56s)
+  IDS=(Clutch-Short-14s Clutch-TwoPlayers-20s Clutch-Challenge-20s Clutch-Manifesto-33s Clutch-Story-44s)
 fi
 for id in "${IDS[@]}"; do
   echo "== rendering $id"

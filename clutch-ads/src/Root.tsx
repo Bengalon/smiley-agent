@@ -1,21 +1,19 @@
 import React from "react";
 import { Composition, Folder } from "remotion";
-import { Ad1Hype, AD1_FRAMES } from "./ads/Ad1Hype";
-import { Ad5Challenge, AD5_FRAMES } from "./ads/Ad5Challenge";
-import { Ad2NotLuck, AD2_FRAMES } from "./ads/Ad2NotLuck";
-import { Ad3HowItWorks, AD3_FRAMES } from "./ads/Ad3HowItWorks";
-import { Ad4ClutchMoment, AD4_FRAMES } from "./ads/Ad4ClutchMoment";
+import { AdManifesto, MANIFESTO_FRAMES } from "./v2/AdManifesto";
+import { AdShort, SHORT_FRAMES } from "./v2/AdShort";
+import { AdTwoPlayers, TWO_FRAMES } from "./v2/AdTwoPlayers";
+import { AdStory, STORY_FRAMES } from "./v2/AdStory";
+import { AdChallenge, CHALLENGE_FRAMES } from "./v2/AdChallenge";
 
 const V = { fps: 30, width: 1080, height: 1920 } as const;
 
 export const RemotionRoot: React.FC = () => (
-  <>
-    <Folder name="Ads">
-      <Composition id="Ad1-Hype-15s" component={Ad1Hype} durationInFrames={AD1_FRAMES} {...V} />
-      <Composition id="Ad2-NotLuck-36s" component={Ad2NotLuck} durationInFrames={AD2_FRAMES} {...V} />
-      <Composition id="Ad3-HowItWorks-54s" component={Ad3HowItWorks} durationInFrames={AD3_FRAMES} {...V} />
-      <Composition id="Ad4-ClutchMoment-56s" component={Ad4ClutchMoment} durationInFrames={AD4_FRAMES} {...V} />
-      <Composition id="Ad5-Challenge-23s" component={Ad5Challenge} durationInFrames={AD5_FRAMES} {...V} />
-    </Folder>
-  </>
+  <Folder name="Ads">
+    <Composition id="Clutch-Short-14s" component={AdShort} durationInFrames={SHORT_FRAMES} {...V} />
+    <Composition id="Clutch-TwoPlayers-20s" component={AdTwoPlayers} durationInFrames={TWO_FRAMES} {...V} />
+    <Composition id="Clutch-Challenge-20s" component={AdChallenge} durationInFrames={CHALLENGE_FRAMES} {...V} />
+    <Composition id="Clutch-Manifesto-33s" component={AdManifesto} durationInFrames={MANIFESTO_FRAMES} {...V} />
+    <Composition id="Clutch-Story-44s" component={AdStory} durationInFrames={STORY_FRAMES} {...V} />
+  </Folder>
 );
