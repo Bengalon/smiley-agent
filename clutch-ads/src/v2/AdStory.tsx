@@ -138,9 +138,9 @@ export const AdStory: React.FC = () => {
       <Rise text="בפיגור." at={V(24.4)} out={V(25.5) - 2} size={110} hl={K.loss} style={{ position: "absolute", left: 40, right: 40, top: 1080 }} />
       <Slam text={"סיבוב\n*הקלאץ'.*"} at={V(26.1)} out={V(27.48) - 2} size={150} hl={K.amber} style={{ position: "absolute", left: 40, right: 40, top: 150 }} />
       <Plate text="פי 3." at={V(27.48)} out={V(28.36) - 2} size={170} bg={K.heat} ink="#fff" style={{ position: "absolute", left: 40, right: 40, top: 1200 }} />
-      <Rise text={"כל טעות\n*−300.*"} at={V(28.36)} out={V(30.56) - 2} size={130} hl={K.loss} style={low} />
+      <Rise text={"כל טעות\n*עולה 300.*"} at={V(28.36)} out={V(30.56) - 2} size={130} hl={K.loss} style={low} />
       <Slam text={"שנייה אחת\n*להחליט.*"} at={V(30.56)} out={V(32.1) - 2} size={140} style={low} />
-      <Slam text="CLUTCH!" at={V(32.12)} out={V(32.78) - 2} size={200} font="Unbounded, sans-serif" style={{ position: "absolute", left: 0, right: 0, top: 820 }} />
+      <Slam text="CLUTCH!" at={V(32.12)} out={V(32.78) - 2} size={200} font="Unbounded, sans-serif" style={{ position: "absolute", left: 0, right: 0, top: 820, direction: "ltr" }} />
       <Rise text={"ובפעם הראשונה,\nהניצחון *באמת שלו.*"} at={V(34.76)} out={V(37.56) - 2} size={104} style={low} />
       <Rise text={"עד היום הימרת\nעל *המזל.*"} at={V(37.56)} out={V(39.5) - 2} size={120} hl={K.amber} style={low} />
 
